@@ -1,16 +1,50 @@
-{
-  "name": "anura-stores-website",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
+export default function AnuraStoresWebsite() {
+  return (
+    <div className="min-h-screen bg-blue-50 text-gray-800">
+      <header className="bg-blue-700 text-white p-4 shadow-md">
+        <img
+          src="/484149399_1061662005988131_6648720583197379956_n.jpg"
+          alt="Anura Stores Logo"
+          className="w-full max-h-60 object-cover rounded mb-4"
+        />
+        <h1 className="text-3xl font-bold text-yellow-300">Anura Stores</h1>
+        <p className="text-sm">Malwala Junction & Rathnapura City</p>
+      </header>
+
+      <main className="p-4">
+        <section className="mb-6">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">Our Products</h2>
+          <p>
+            We supply <strong>cement, TOR steel, metal items</strong>, and all kinds of <strong>construction goods</strong>. Browse our selection and place your order online.
+          </p>
+        </section>
+
+        <section className="mb-6">
+          <h2 className="text-xl font-semibold text-blue-800 mb-2">ඔබට අවශ්‍ය ද්‍රව්‍ය ලබා ගැනීමට දැන්ම ඇණවුම් කරන්න</h2>
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
+            Order Now / දැන්ම ඇණවුම් කරන්න
+          </button>
+        </section>
+
+        <section className="mb-6">
+          <h2 className="text-xl font-semibold text-blue-800 mb-2">Contact Us</h2>
+          <p>📍 Malwala Junction & Rathnapura City</p>
+          <p>📞 Call us: 077-2329002 / 077-0290035 / 077-9832516</p>
+          <p>📱 WhatsApp: Click below to chat</p>
+          <a
+            href="https://wa.me/94772329002"
+            className="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            target="_blank"
+          >
+            Chat on WhatsApp
+          </a>
+          <p className="mt-4">🔵 Facebook: <a href="https://www.facebook.com/jeewantha94" className="text-blue-700 underline" target="_blank">Visit our Facebook Page</a></p>
+        </section>
+      </main>
+
+      <footer className="bg-blue-700 text-white text-center p-3 mt-10">
+        © 2025 Anura Stores. All rights reserved.
+      </footer>
+    </div>
+  );
 }
